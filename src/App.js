@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { init } from "./utils/initDroneLayer";
 
 function App() {
+  useEffect(() => {
+    init();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <div className="hero">
+        <h1 className="title">hter uh jk</h1>
+        <p className="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          voluptates vero pariatur consectetur omnis id qui, quo reiciendis
+          laboriosam et dignissimos repudiandae praesentium! Facere in iste unde
+          et labore. Fugiat mollitia quibusdam officia. Tenetur amet pariatur
+          eos culpa asperiores odio!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          <button className="btn">something</button>
+        </p>
+      </div>
     </div>
   );
 }
